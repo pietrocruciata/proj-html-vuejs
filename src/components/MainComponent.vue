@@ -125,6 +125,52 @@
         </div>
     </section>
 
+    <!--  SECTION 8 -->
+    <section>
+        <div class="container-full">
+            <div class="row">
+                <div class="col-6 bg-img d-flex flex-column ai-center gap-20 p-stories bg-stories jc-center">
+                    <div class="c-lightgreen">Real stories</div>
+                    <p class="lh-30">I am free to learn at my own pace, follow my own schedule and choose the subject i
+                        want to learn
+                        from the syllabus. Great study portal for people like me.</p>
+                    <div><img src="/public/img/testimonial-avata-02.jpg" alt="" class="img-stories"></div>
+                    <div>MINA HOLLACE</div>
+                    <div class="fs-12 c-lightgrey">/Freelancer</div>
+                </div>
+
+                <div class="col-6 p-relative">
+                    <img src="/public/img/home-movation-testimonial-image.jpg" alt="" class="d-block">
+                    <div class="p-absolute change-stories d-flex flex-column ai-center bg-white">
+                        <font-awesome-icon :icon="['fas', 'sort-up']" class="c-lightgrey" />
+                        <div>1/4</div>
+                        <font-awesome-icon :icon="['fas', 'sort-down']" class="c-lightgrey" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--  SECTION 9 -->
+    <section class="p-section">
+        <div class="container">
+            <div class="d-flex flex-column gap-20">
+                <div class="fs-12">BLOG UPDATED</div>
+                <div class="fs-25">Interesting <span class="c-lightgreen">articles updated</span> daily</div>
+            </div>
+
+            <div class="row gap-20">
+
+                <DailyArticlesComponent v-for="(article, i) in articles" :key="i" :article="article"
+                    class="d-flex flex-column" />
+
+
+
+            </div>
+        </div>
+    </section>
+
 
 </template>
 
@@ -132,12 +178,14 @@
 import CardComponent from './CardComponent.vue'
 import BookComponent from './BookComponent.vue'
 import ClientComponent from './ClientComponent.vue'
+import DailyArticlesComponent from './DailyArticlesComponent.vue'
 
 export default {
     components: {
         CardComponent,
         BookComponent,
-        ClientComponent
+        ClientComponent,
+        DailyArticlesComponent
     },
     data() {
         return {
@@ -231,6 +279,32 @@ export default {
                 {
                     image: 'public/img/client-logo-04-primary.png'
                 },
+            ],
+            articles: [
+                {
+                    image: 'public/img/motivation-blog-04-480x325.jpg',
+                    date: 'May 13,2020',
+                    articlesTitle: 'How to stay True to Your Personal Brand',
+                    description: 'when it comes to your business or career, you want...'
+                },
+                {
+                    image: 'public/img/motivation-blog-03-480x325.jpg',
+                    date: 'May 13,2020',
+                    articlesTitle: '5 Vital Lessons in 5 years of Freelancing',
+                    description: 'Being self-emplayed and working from home, it s easy to get ...'
+                },
+                {
+                    image: 'public/img/motivation-blog-02-480x325.jpg',
+                    date: 'May 13,2020',
+                    articlesTitle: '11 Super Useful Tips for Small-Business Owners',
+                    description: 'Being a small-business owner poses a ton of challenges. We...'
+                },
+                {
+                    image: 'public/img/motivation-blog-01-480x325.jpg',
+                    date: 'May 13,2020',
+                    articlesTitle: 'How to Give Yourself Grace to Start Again',
+                    description: 'Forgive yourself for bad habits you may have started or...'
+                },
             ]
         }
     }
@@ -239,6 +313,10 @@ export default {
 
 <style lang="scss" scoped>
 @use './style/general';
+
+.bg-white {
+    background-color: white;
+}
 
 .button-lightgreen {
     border: none;
@@ -285,6 +363,10 @@ export default {
     line-height: 50px;
 }
 
+.lh-30 {
+    line-height: 30px;
+}
+
 
 
 .fs-12 {
@@ -303,5 +385,31 @@ export default {
 
 .pr-10 {
     padding-right: 10px;
+}
+
+.p-stories {
+    padding: 70px 100px;
+}
+
+.bg-stories {
+    background-color: #f5f7fa;
+}
+
+.img-stories {
+    width: 70px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.change-stories {
+    padding: 20px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    top: 45%;
+    left: -30px;
+}
+
+.fs-25 {
+    font-size: 25px;
 }
 </style>
