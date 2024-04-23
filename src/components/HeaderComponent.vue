@@ -16,7 +16,7 @@
                     </li>
                 </ul>
                 
-                <ul class="d-flex gap-20 decoration-brand">
+                <ul class="d-flex gap-20 mouse-hover">
                     <li>
                         <font-awesome-icon :icon="['fab', 'twitter']" />
                     </li>
@@ -101,20 +101,10 @@ select{
     
 }
 
-.decoration-brand{
-    cursor: pointer;
-}
 
-.bg-img{
-    background-image: url(/public/img/background-pattern-wavify.png);
-}
 
-.p-relative{
-    position: relative;
-}
 
-.p-absolute{
-    position: absolute;
-}
+
+
 
 </style>
