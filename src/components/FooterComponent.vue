@@ -105,9 +105,7 @@
     color: white;
 }
 
-.c-lightgrey{
-    color: lightgrey;
-}
+
 
 
 
@@ -128,16 +126,14 @@
     height: 120px;
 }
 
-.col-3{
-    width: calc((3 * 100%) / 12);
-}
+
 
 .icon-rounded{
     background-color: #20ad96;
     padding: 20px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    left: 710px;
+    left: 830px;
     top: 40px;
 }
 

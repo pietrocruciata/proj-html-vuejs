@@ -66,9 +66,7 @@ import store from '../store.js'
 
 
 
-.ai-center{
-    align-items: center;
-}
+
 
 .gap-10{
     gap: 10px;
@@ -82,9 +80,7 @@ import store from '../store.js'
     display: flex;
 }
 
-.jc-spacebetween{
-    justify-content: space-between;
-}
+
 
 .decoration{
     color: #3f3a64;

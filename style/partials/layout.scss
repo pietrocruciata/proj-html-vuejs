@@ -1,73 +1,121 @@
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.gap-20{
+.gap-20 {
     gap: 20px;
 }
 
-.p-20{
+.p-20 {
     padding: 20px;
 }
 
-.pl-20{
+.p-40 {
+    padding: 40px;
+}
+
+.pl-20 {
     padding-left: 20px;
 }
 
-.container{
-    width: 1100px;
+.p-section{
+    padding: 30px 0;
+}
+
+.container {
+    width: 1200px;
     margin: 0 auto;
 }
 
-.mouse-hover{
+.mouse-hover {
     cursor: pointer;
 }
 
-.ta-center{
+.ta-center {
     text-align: center;
 }
 
-.jc-center{
+.jc-center {
     justify-content: center;
 }
 
-.p-50{
+.p-50 {
     padding: 50px;
 }
 
-.p-relative{
+.p-relative {
     position: relative;
 }
 
-.p-absolute{
+.p-absolute {
     position: absolute;
 }
 
-.col-6{
+.col-6 {
     width: calc((6 * 100%) / 12);
 }
 
-.bg-img{
+.col-3 {
+    width: calc((3 * 100%) / 12);
+}
+
+.col-8 {
+    width: calc((8 * 100%) / 12);
+}
+
+.col-4 {
+    width: calc((4 * 100%) / 12);
+}
+
+.bg-img {
     background-image: url(/public/img/background-pattern-wavify.png);
 }
 
-.pt-50{
+.pt-50 {
     padding-top: 50px;
 }
 
-.pb-50{
+.pb-50 {
     padding-bottom: 50px;
 }
 
-.bg.lightgreen{
+.bg.lightgreen {
     background-color: #20ad96;
 }
 
-.flex-column{
+.flex-column {
     flex-direction: column;
+}
+
+.c-lightgreen{
+    color: #20ad96;
+}
+
+.ai-center{
+    align-items: center;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+
+.c-lightgrey{
+    color: lightgrey;
+}
+
+.c-grey{
+    color: grey;
+}
+
+.border-radius-5 {
+    border-radius: 5px;
+}
+
+.jc-spacebetween{
+    justify-content: space-between;
 }
