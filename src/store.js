@@ -4,11 +4,11 @@ const store = reactive({
     items: [
         {
             name: 'Home',
-            hover: true
+            hover: false
         },
         {
             name: 'Pages',
-            hover: false
+            hover: true
 
         },
         {

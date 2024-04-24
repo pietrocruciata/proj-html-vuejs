@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-footer ">
+    <div class="bg-footer mt-40">
         <div class="container">
             <div class="row jc-center">
                 <div class="col-6">
@@ -105,14 +105,6 @@
     color: white;
 }
 
-
-
-
-
-.p-list{
-    padding: 10px 0 10px 20px;
-}
-
 .list-disposition{
     display: flex;
     flex-direction: column;
@@ -135,6 +127,10 @@
     border-radius: 50%;
     left: 830px;
     top: 40px;
+}
+
+.mt-40{
+    margin-top: 40px;
 }
 
 

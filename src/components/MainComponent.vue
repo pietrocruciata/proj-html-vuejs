@@ -109,8 +109,9 @@
                     <button class="button-lightgreen p-20 d-flex jc-center"><strong>Get Free Ebook</strong></button>
 
                 </div>
-                <div class="col-8 d-flex gap-20">
+                <div class="col-8 d-flex gap-20 ">
                     <BookComponent v-for="(book, i) in books" :key="i" :book="book" />
+
                 </div>
             </div>
         </div>
@@ -119,7 +120,7 @@
     <!--  SECTION 7 -->
     <section class="p-section">
         <div class="container">
-            <div class="row jc-spacebetween c-lightgrey ai-center">
+            <div class="row jc-spacebetween c-lightgrey ai-center mouse-hover">
                 <ClientComponent v-for="(client, i) in clients" :key="i" :client="client" />
             </div>
         </div>
@@ -142,9 +143,9 @@
                 <div class="col-6 p-relative">
                     <img src="/public/img/home-movation-testimonial-image.jpg" alt="" class="d-block">
                     <div class="p-absolute change-stories d-flex flex-column ai-center bg-white">
-                        <font-awesome-icon :icon="['fas', 'sort-up']" class="c-lightgrey" />
+                        <font-awesome-icon :icon="['fas', 'sort-up']" class="c-lightgrey mouse-hover" />
                         <div>1/4</div>
-                        <font-awesome-icon :icon="['fas', 'sort-down']" class="c-lightgrey" />
+                        <font-awesome-icon :icon="['fas', 'sort-down']" class="c-lightgrey mouse-hover" />
                     </div>
                 </div>
             </div>
@@ -160,12 +161,12 @@
                 <div class="fs-25">Interesting <span class="c-lightgreen">articles updated</span> daily</div>
             </div>
 
-            <div class="row gap-20">
+            <div class="row gap-20 jc-center">
 
                 <DailyArticlesComponent v-for="(article, i) in articles" :key="i" :article="article"
                     class="d-flex flex-column" />
 
-
+                <div class="posts pt-50  mouse-hover">VIEW ALL POSTS</div>
 
             </div>
         </div>
@@ -333,9 +334,7 @@ export default {
     }
 }
 
-.fs-70 {
-    font-size: 70px;
-}
+
 
 .bg-faceline {
     background-image: url(/public/img/home-movation-shape-face-600x534.png);
@@ -345,32 +344,10 @@ export default {
     background-image: url(/public/img/background-pattern-grid-line-06.png);
 }
 
-.fs-50 {
-    font-size: 50px;
-}
-
 .position-youtube {
     width: 100px;
     top: 45%;
     left: 45%;
-}
-
-.w-30 {
-    width: 30px;
-}
-
-.lh-50 {
-    line-height: 50px;
-}
-
-.lh-30 {
-    line-height: 30px;
-}
-
-
-
-.fs-12 {
-    font-size: 12px;
 }
 
 .gap-40 {
@@ -381,10 +358,6 @@ export default {
     background-color: rgb(228, 226, 226);
     cursor: pointer;
     border-radius: 5px;
-}
-
-.pr-10 {
-    padding-right: 10px;
 }
 
 .p-stories {
@@ -409,7 +382,10 @@ export default {
     left: -30px;
 }
 
-.fs-25 {
-    font-size: 25px;
+
+
+.posts {
+    color: #20ad96;
+    border-bottom: 1px solid #20ad96;
 }
 </style>

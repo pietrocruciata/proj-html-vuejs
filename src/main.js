@@ -6,12 +6,13 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import { faAngleDown, faArrowUp,faArrowRight, faCheck, faSortUp, faSortDown } from '@fortawesome/free-solid-svg-icons'
-import {faUser, faFileLines, faCalendar } from '@fortawesome/free-regular-svg-icons'
+import { faAngleDown, faArrowUp,faArrowRight, faCheck, faSortUp, faSortDown, faMagnifyingGlass, faCartShopping, faSignal} from '@fortawesome/free-solid-svg-icons'
+import {faUser, faFileLines, faCalendar, faHeart } from '@fortawesome/free-regular-svg-icons'
 import { faInstagram, faLinkedin, faFacebook, faTwitter} from '@fortawesome/free-brands-svg-icons'
 
 
-library.add(faInstagram, faLinkedin, faFacebook, faTwitter,faAngleDown,faArrowUp,faArrowRight,faUser,faFileLines, faCheck, faSortUp, faSortDown, faCalendar)
+library.add(faInstagram, faLinkedin, faFacebook, faTwitter,faAngleDown,faArrowUp,faArrowRight,faUser,faFileLines, faCheck, 
+    faSortUp, faSortDown, faCalendar, faMagnifyingGlass, faCartShopping, faHeart, faSignal)
 
 const app = createApp(App)
 

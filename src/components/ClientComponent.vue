@@ -1,5 +1,5 @@
 <template>
-    <img :src="client.image" alt="" class="img-opacity">
+    <img :src="client.image" alt="" class="img-opacity ">
 </template>
 
 <script>
@@ -16,6 +16,7 @@
 .img-opacity{
     filter: contrast(0.5);
     opacity: 0.3;
-
 }
+
+
 </style>
