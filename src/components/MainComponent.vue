@@ -21,11 +21,11 @@
     <section>
         <div class="container pt-50 ">
             <div class="row bg-section2">
-                <div class="col-3 d-flex flex-column ai-center gap-20"  v-for="(stat, i) in stats" :key="i"> 
+                <div class="col-3 d-flex flex-column ai-center gap-20" v-for="(stat, i) in stats" :key="i">
                     <div class="c-lightgreen fs-30"><strong>{{ stat.number }}</strong></div>
-                    <div>{{stat.description}}</div>
+                    <div>{{ stat.description }}</div>
                 </div>
-            
+
             </div>
         </div>
     </section>
@@ -54,7 +54,7 @@
     <section class="p-section">
         <div class="container">
             <div class="row">
-                <div class="col-8 p-relative p-40">
+                <div class="col-8 p-relative p-40 mouse-hover">
                     <img src="/public/img/home-movation-video-poster-670x450.jpg" alt="" class="border-radius-5">
                     <img src="/public/img/icon-youtube-play.png" alt="" class="p-absolute position-youtube">
                 </div>
@@ -153,9 +153,9 @@
             <div class="row gap-20 jc-center">
 
                 <DailyArticlesComponent v-for="(article, i) in articles" :key="i" :article="article"
-                    class="d-flex flex-column" />
+                    class="d-flex flex-column card" />
 
-                <div class="posts pt-50  mouse-hover">VIEW ALL POSTS</div>
+                <div class="posts pt-50  mouse-hover ">VIEW ALL POSTS</div>
 
             </div>
         </div>
@@ -296,28 +296,28 @@ export default {
                     description: 'Forgive yourself for bad habits you may have started or...'
                 },
             ],
-            stats:[
+            stats: [
                 {
-                    number:'1.926',
-                    description:'FINISHED SESSION'
+                    number: '1.926',
+                    description: 'FINISHED SESSION'
                 },
                 {
-                    number:'100%',
-                    description:'SATISFACTION RATE'
+                    number: '100%',
+                    description: 'SATISFACTION RATE'
                 },
                 {
-                    number:'3092+',
-                    description:'ENROLLED LEARNES'
+                    number: '3092+',
+                    description: 'ENROLLED LEARNES'
                 },
                 {
-                    number:'200',
-                    description:'ONLINE INSTRUCTORS'
+                    number: '200',
+                    description: 'ONLINE INSTRUCTORS'
                 },
             ]
         }
     },
-    methods:{
-        scrollPage(){
+    methods: {
+        scrollPage() {
             window.scrollTo(0, 0);
         }
     }
@@ -399,5 +399,11 @@ export default {
 .posts {
     color: #20ad96;
     border-bottom: 1px solid #20ad96;
+
+    &:hover{
+        color: #3f3a64;
+        border-bottom: 1px solid #3f3a64;
+
+    }
 }
 </style>

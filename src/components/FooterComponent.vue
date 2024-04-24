@@ -5,9 +5,9 @@
                 <div class="col-6">
                     <h3 class="c-white p-20">Address</h3>
                     <ul class="c-lightgrey mouse-hover" v-for="el in store.address" v>
-                        <li class="pl-20">{{ el.position }}</li>
-                        <li class="p-list">{{ el.cell }}</li>
-                        <li class="pl-20">{{ el.mail }}</li>
+                        <li class="pl-20 hover" >{{ el.position }}</li>
+                        <li class="p-list hover">{{ el.cell }}</li>
+                        <li class="pl-20 hover">{{ el.mail }}</li>
                     </ul>
                     <ul class="d-flex gap-20 decoration-brand c-lightgrey d-flex gap-20 p-20 mouse-hover">
                         <li>
@@ -28,14 +28,14 @@
                 <div class="col-3">
                     <h3 class="c-white p-20 ">Explore</h3>
                     <ul class="c-lightgrey mouse-hover c-lightgrey list-disposition h-120">
-                        <li v-for="Explore in this.footerExplore">{{ Explore.name }}</li>
+                        <li v-for="Explore in footerExplore"  class="hover">{{ Explore.name }}</li>
                     </ul>
                 </div>
 
                 <div class="col-3">
                     <h3 class="c-white p-20 ">Information</h3>
                     <ul class="c-lightgrey mouse-hover c-lightgrey list-disposition">
-                        <li v-for="information in this.footerInformations">{{ information.information }}</li>
+                        <li v-for="information in footerInformations" class="hover">{{ information.information }}</li>
                     </ul>
                 </div>
                 <div class="c-lightgrey p-50 ta-center p-relative">
@@ -144,5 +144,9 @@ export default {
     position: fixed;
     top: 630px;
     left: 1390px;
+}
+
+.hover:hover{
+    color: #20ad96;
 }
 </style>
