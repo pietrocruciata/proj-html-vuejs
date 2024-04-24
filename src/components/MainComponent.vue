@@ -21,22 +21,11 @@
     <section>
         <div class="container pt-50 ">
             <div class="row bg-section2">
-                <div class="col-3 d-flex flex-column ai-center gap-20">
-                    <div class="c-lightgreen fs-30"><strong>1.926</strong></div>
-                    <div>FINISCHED SESSION</div>
+                <div class="col-3 d-flex flex-column ai-center gap-20"  v-for="(stat, i) in stats" :key="i"> 
+                    <div class="c-lightgreen fs-30"><strong>{{ stat.number }}</strong></div>
+                    <div>{{stat.description}}</div>
                 </div>
-                <div class="col-3 d-flex flex-column ai-center gap-20">
-                    <div class="c-lightgreen fs-30"><strong>100%</strong></div>
-                    <div>SATISFACTION RATE</div>
-                </div>
-                <div class="col-3 d-flex flex-column ai-center gap-20">
-                    <div class="c-lightgreen fs-30"><strong>3082+</strong></div>
-                    <div>ENROLLED LEARNES</div>
-                </div>
-                <div class="col-3 d-flex flex-column ai-center gap-20">
-                    <div class="c-lightgreen fs-30"><strong>200</strong></div>
-                    <div>ONLINE INSTRUCTORS</div>
-                </div>
+            
             </div>
         </div>
     </section>
@@ -88,7 +77,7 @@
                 <div class="fs-30 p-section">Latest <span class="c-lightgreen">Online Courses</span></div>
             </div>
             <div class="row gap-40 jc-center">
-                <CardComponent v-for="(card, i) in this.cards" :key="i" :item="card" class="card" />
+                <CardComponent v-for="(card, i) in cards" :key="i" :item="card" class="card" />
                 <button class="button-lightgreen p-20 d-flex jc-center"><strong>VIew all courses <font-awesome-icon
                             :icon="['fas', 'arrow-right']" /></strong></button>
             </div>
@@ -306,7 +295,30 @@ export default {
                     articlesTitle: 'How to Give Yourself Grace to Start Again',
                     description: 'Forgive yourself for bad habits you may have started or...'
                 },
+            ],
+            stats:[
+                {
+                    number:'1.926',
+                    description:'FINISHED SESSION'
+                },
+                {
+                    number:'100%',
+                    description:'SATISFACTION RATE'
+                },
+                {
+                    number:'3092+',
+                    description:'ENROLLED LEARNES'
+                },
+                {
+                    number:'200',
+                    description:'ONLINE INSTRUCTORS'
+                },
             ]
+        }
+    },
+    methods:{
+        scrollPage(){
+            window.scrollTo(0, 0);
         }
     }
 }
