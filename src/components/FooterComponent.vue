@@ -40,7 +40,7 @@
                 </div>
                 <div class="c-lightgrey p-50 ta-center p-relative">
                     <p>&#169 2020 Maxcoach. All Rights Reserved</p>
-                    <font-awesome-icon :icon="['fas', 'arrow-up']" class="p-fixed icon-rounded mouse-hover"
+                    <font-awesome-icon :icon="['fas', 'arrow-up']" class="p-fixed icon-rounded mouse-hover "
                         @click="scrollPage()" />
                 </div>
 

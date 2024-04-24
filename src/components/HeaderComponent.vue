@@ -1,6 +1,6 @@
 <template>
     <section class="bg-img">
-        <div class="container">
+        <div class="container ">
             <div class="row p-20 jc-spacebetween p-relative">
 
                 <div class="col d-flex ai-center ">
